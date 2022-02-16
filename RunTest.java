@@ -1,20 +1,15 @@
-// import org.junit.*;
-
-import org.apache.logging.log4j.core.util.Assert;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-public class main {
-    @BeforeClass
-    public void beforeClass() {
+public class RunTest {
+    @BeforeAll
+    public static void beforeAll() {
         System.out.println("Before class");
     }
 
-    @AfterClass
-    public void afterClass() {
+    @AfterAll
+    public static void afterAll() {
         System.out.println("After class");
     }
 
